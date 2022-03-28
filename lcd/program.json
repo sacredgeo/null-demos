@@ -1,0 +1,46 @@
+{
+  "blocks": {
+    "gif-file-loader": {
+      "x": -24,
+      "y": 20.000000000000004,
+      "outputLinks": {
+        "imageData": [
+          {
+            "lcd-imagedata": "imageData"
+          }
+        ]
+      },
+      "inputValues": {
+        "filename": "/Users/mattway/Downloads/icegif-1285.gif",
+        "animate": true
+      }
+    },
+    "image-loader": {
+      "x": -41,
+      "y": 177,
+      "outputLinks": {
+        "imageData": []
+      },
+      "inputValues": {
+        "filename": "/Users/mattway/Downloads/cat-small.jpeg"
+      }
+    },
+    "lcd-imagedata": {
+      "x": 298,
+      "y": 121,
+      "inputValues": {
+        "noise": 22.434782608695652,
+        "subWidth": "1",
+        "subHeight": "3",
+        "zoom": 95.65217391304347
+      },
+      "outputLinks": {}
+    }
+  },
+  "renderOrder": [
+    "image-loader",
+    "gif-file-loader",
+    "lcd-imagedata"
+  ],
+  "name": "Untitled"
+}

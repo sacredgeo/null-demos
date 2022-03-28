@@ -1,0 +1,27 @@
+{
+  "name": "image-loader",
+  "version": "0.0.2",
+  "description": "Loads an image from a file into an imageData.",
+  "dependencies": {},
+  "tags": [
+    "image",
+    "loader",
+    "imageData"
+  ],
+  "block": {
+    "inputs": {},
+    "outputs": {},
+    "propertyOrder": [
+      "filename",
+      "imageData"
+    ],
+    "properties": {
+      "filename": {
+        "type": "fileSelector"
+      },
+      "imageData": {}
+    }
+  },
+  "main": "code.js",
+  "author": "AFo3oL8kpiYBaXLv7lJwJyR9vCt1"
+}

@@ -1,0 +1,45 @@
+{
+  "main": "code.js",
+  "version": "0.0.1",
+  "block": {
+    "properties": {
+      "imageData": {},
+      "noise": {
+        "settings": {
+          "min": 0,
+          "max": 30,
+          "default": 10
+        },
+        "type": "slider"
+      },
+      "subWidth": {
+        "type": "number"
+      },
+      "subHeight": {
+        "type": "number"
+      },
+      "zoom": {
+        "settings": {
+          "default": 100,
+          "min": 50,
+          "max": 300
+        },
+        "type": "slider"
+      }
+    },
+    "propertyOrder": [
+      "imageData",
+      "subWidth",
+      "subHeight",
+      "noise",
+      "zoom"
+    ]
+  },
+  "name": "lcd-imagedata",
+  "description": "Takes an imagedata, and creates an lcd/tv effected output.",
+  "tags": [
+    "lcd",
+    "effect",
+    "imageData"
+  ]
+}
