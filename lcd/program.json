@@ -4,14 +4,10 @@
       "x": -24,
       "y": 20.000000000000004,
       "outputLinks": {
-        "imageData": [
-          {
-            "lcd-imagedata": "imageData"
-          }
-        ]
+        "imageData": []
       },
       "inputValues": {
-        "filename": "/Users/mattway/Downloads/icegif-1285.gif",
+        "filename": "..\\..\\resources\\person-small.gif",
         "animate": true
       }
     },
@@ -19,10 +15,14 @@
       "x": -41,
       "y": 177,
       "outputLinks": {
-        "imageData": []
+        "imageData": [
+          {
+            "lcd-imagedata": "imageData"
+          }
+        ]
       },
       "inputValues": {
-        "filename": "/Users/mattway/Downloads/cat-small.jpeg"
+        "filename": "..\\..\\resources\\cat-small.jpeg"
       }
     },
     "lcd-imagedata": {
@@ -32,7 +32,7 @@
         "noise": 22.434782608695652,
         "subWidth": "1",
         "subHeight": "3",
-        "zoom": 95.65217391304347
+        "zoom": 71.81818181818181
       },
       "outputLinks": {}
     }

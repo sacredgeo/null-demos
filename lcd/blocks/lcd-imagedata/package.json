@@ -22,7 +22,7 @@
         "settings": {
           "default": 100,
           "min": 50,
-          "max": 300
+          "max": 200
         },
         "type": "slider"
       }
