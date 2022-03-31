@@ -4,10 +4,15 @@
       "x": -24,
       "y": 20.000000000000004,
       "outputLinks": {
-        "imageData": []
+        "imageData": [
+          {
+            "lcd-imagedata": "imageData"
+          }
+        ],
+        "filename": []
       },
       "inputValues": {
-        "filename": "..\\..\\resources\\person-small.gif",
+        "filename": "../../resources/1.gif",
         "animate": true
       }
     },
@@ -15,24 +20,24 @@
       "x": -41,
       "y": 177,
       "outputLinks": {
-        "imageData": [
-          {
-            "lcd-imagedata": "imageData"
-          }
-        ]
+        "imageData": []
       },
       "inputValues": {
-        "filename": "..\\..\\resources\\cat-small.jpeg"
+        "filename": "../../resources/cat-small.jpeg"
       }
     },
     "lcd-imagedata": {
-      "x": 298,
-      "y": 121,
+      "x": 231,
+      "y": 7,
       "inputValues": {
-        "noise": 22.434782608695652,
-        "subWidth": "1",
-        "subHeight": "3",
-        "zoom": 71.81818181818181
+        "noise": 0,
+        "subWidth": "2",
+        "subHeight": "6",
+        "zoom": 80.74534161490683,
+        "filterHue": 11.180124223602485,
+        "filterStrength": 0,
+        "invertColors": false,
+        "colorVariance": "1"
       },
       "outputLinks": {}
     }
