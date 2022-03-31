@@ -25,6 +25,21 @@
           "max": 200
         },
         "type": "slider"
+      },
+      "colorVariance": {
+        "type": "number"
+      },
+      "invertColors": {
+        "type": "checkbox"
+      },
+      "filterHue": {
+        "settings": {
+          "max": 360
+        },
+        "type": "slider"
+      },
+      "filterStrength": {
+        "type": "slider"
       }
     },
     "propertyOrder": [
@@ -32,7 +47,11 @@
       "subWidth",
       "subHeight",
       "noise",
-      "zoom"
+      "zoom",
+      "colorVariance",
+      "invertColors",
+      "filterHue",
+      "filterStrength"
     ]
   },
   "name": "lcd-imagedata",
