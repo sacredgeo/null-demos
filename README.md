@@ -1,6 +1,9 @@
 # null-demos
 Null demos  -LCD screen
 
-I'm working on some features for it. Will update this when completed.
+LCD code by Matt Way.
 
-Thanks Matt!
+My additions:
+- color variation
+- invert colors
+- color filter
