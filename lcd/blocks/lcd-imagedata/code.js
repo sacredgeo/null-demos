@@ -1,12 +1,10 @@
 if (!state.imageData) {
-  md`
-No imageData connected.
-  `
+  md`No imageData connected.`
   return
 }
 
 runOnce(() => {
-  html`<canvas id="c" />`
+  html`<canvas id="c"/>`
 })
 
 function addNoise(value) {
@@ -57,8 +55,8 @@ function rgb2hsl(r, g, b) {
 const canvas = element.querySelector('#c')
 const ctx = canvas.getContext('2d')
 
-const subWidth = +state.subWidth
-const subHeight = +state.subHeight
+const subWidth = state.subWidth
+const subHeight = state.subHeight
 
 const width = state.imageData.width * subWidth * 3
 const height = state.imageData.height * subHeight
@@ -101,17 +99,17 @@ for (let y = 0; y < canvas.height; y += subHeight) {
       ipB = 255 - ipB
     }
 
-    //color variation
-    ipR -= getRandom(-state.colorVariance, state.colorVariance)
-    ipG -= getRandom(-state.colorVariance, state.colorVariance)
-    ipB -= getRandom(-state.colorVariance, state.colorVariance)
-
     //apply color filter
     if (state.fill_Color && state.fill_Amount > 0) {
       ipR += parseInt((state.fill_Color.rgb.r - ipR) / (1 / state.fill_Amount))
       ipG += parseInt((state.fill_Color.rgb.g - ipG) / (1 / state.fill_Amount))
       ipB += parseInt((state.fill_Color.rgb.b - ipB) / (1 / state.fill_Amount))
     }
+
+    //color variation
+    ipR -= getRandom(-state.colorVariance, state.colorVariance)
+    ipG -= getRandom(-state.colorVariance, state.colorVariance)
+    ipB -= getRandom(-state.colorVariance, state.colorVariance)
 
     for (let sy = 0; sy < subHeight; sy++) {
       const outputYOffset = (y + sy) * width
