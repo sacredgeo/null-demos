@@ -6,7 +6,8 @@
     "propertyOrder": [
       "filename",
       "animate",
-      "imageData"
+      "imageData",
+      "fps"
     ],
     "properties": {
       "filename": {
@@ -15,7 +16,10 @@
       "animate": {
         "type": "checkbox"
       },
-      "imageData": {}
+      "imageData": {},
+      "fps": {
+        "type": "number"
+      }
     }
   },
   "name": "gif-file-loader",
