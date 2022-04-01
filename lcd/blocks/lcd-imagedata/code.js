@@ -71,9 +71,6 @@ const { data } = output
 
 const pixelWidth = 3 * subWidth
 
-let color1 //used for filter hue
-//state.hueShift = (state.hueShift + 3) % 360
-
 for (let y = 0; y < canvas.height; y += subHeight) {
   const inputY = Math.floor(y / subHeight)
   const inputYOffset = inputY * state.imageData.width
