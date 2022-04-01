@@ -1,8 +1,8 @@
 {
   "blocks": {
     "gif-file-loader": {
-      "x": -24,
-      "y": 20.000000000000004,
+      "x": 849,
+      "y": 399,
       "outputLinks": {
         "imageData": [
           {
@@ -12,32 +12,81 @@
         "filename": []
       },
       "inputValues": {
-        "filename": "../../resources/1.gif",
+        "filename": "../../resources/9.gif",
         "animate": true
       }
     },
     "image-loader": {
-      "x": -41,
-      "y": 177,
+      "x": 844,
+      "y": 254,
       "outputLinks": {
         "imageData": []
       },
       "inputValues": {
-        "filename": "../../resources/cat-small.jpeg"
+        "filename": "../../resources/image.jpg"
       }
     },
     "lcd-imagedata": {
-      "x": 231,
-      "y": 7,
+      "x": 1029,
+      "y": 342,
       "inputValues": {
         "noise": 0,
         "subWidth": "2",
         "subHeight": "6",
-        "zoom": 80.74534161490683,
-        "filterHue": 11.180124223602485,
-        "filterStrength": 0,
+        "zoom": 57.291666666666664,
+        "filterHue": 268.3229813664596,
+        "filterStrength": 0.6708074534161491,
         "invertColors": false,
-        "colorVariance": "1"
+        "colorVariance": 10,
+        "hueShift": 259.27777777777777,
+        "shiftHue": true,
+        "filterHue2": {
+          "hsl": {
+            "h": 317.6842105263158,
+            "s": 0.9126406597208977,
+            "l": 0.6199605,
+            "a": 1
+          },
+          "hex": "#f746c2",
+          "rgb": {
+            "r": 247,
+            "g": 70,
+            "b": 194,
+            "a": 1
+          },
+          "hsv": {
+            "h": 317.6842105263158,
+            "s": 0.7175000000000001,
+            "v": 0.9668000000000001,
+            "a": 1
+          },
+          "oldHue": 317.6842105263158,
+          "source": "hsv"
+        },
+        "fill_Color": {
+          "hsl": {
+            "h": 265.1219512195122,
+            "s": 0.875898237617992,
+            "l": 0.5108852700000001,
+            "a": 1
+          },
+          "hex": "#7115f0",
+          "rgb": {
+            "r": 113,
+            "g": 21,
+            "b": 240,
+            "a": 1
+          },
+          "hsv": {
+            "h": 265.1219512195122,
+            "s": 0.9122,
+            "v": 0.9393,
+            "a": 1
+          },
+          "oldHue": 265.1219512195122,
+          "source": "hsv"
+        },
+        "fill_Amount": 0
       },
       "outputLinks": {}
     }
