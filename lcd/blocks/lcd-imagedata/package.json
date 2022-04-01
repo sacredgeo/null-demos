@@ -32,13 +32,19 @@
       "invertColors": {
         "type": "checkbox"
       },
-      "filterHue": {
+      "shiftHue": {
+        "type": "checkbox"
+      },
+      "hueShift": {
         "settings": {
-          "max": 360
+          "max": 359
         },
         "type": "slider"
       },
-      "filterStrength": {
+      "fill_Color": {
+        "type": "color"
+      },
+      "fill_Amount": {
         "type": "slider"
       }
     },
@@ -50,8 +56,10 @@
       "zoom",
       "colorVariance",
       "invertColors",
-      "filterHue",
-      "filterStrength"
+      "shiftHue",
+      "hueShift",
+      "fill_Color",
+      "fill_Amount"
     ]
   },
   "name": "lcd-imagedata",
