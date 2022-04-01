@@ -18,13 +18,40 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-//input: h in [0-360] and s,l in [0-1]  - ex: hsl2rgb(30, 1, .5)
-// output: r,g,b in [0-255, 0-255, 0-255]
+//input: h in [0,360] and s,l in [0,1] - output: r,g,b in [0-255,0-255,0-255]
 function hsl2rgb(h, s, l) {
   let a = s * Math.min(l, 1 - l)
   let f = (n, k = (n + h / 30) % 12) =>
     l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1)
   return [f(0) * 255, f(8) * 255, f(4) * 255]
+}
+
+function rgb2hsl(r, g, b) {
+  ;(r /= 255), (g /= 255), (b /= 255)
+  var max = Math.max(r, g, b),
+    min = Math.min(r, g, b)
+  var h,
+    s,
+    l = (max + min) / 2
+  if (max == min) {
+    h = s = 0 // achromatic
+  } else {
+    var d = max - min
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0)
+        break
+      case g:
+        h = (b - r) / d + 2
+        break
+      case b:
+        h = (r - g) / d + 4
+        break
+    }
+    h /= 6
+  }
+  return [Math.floor(h * 360), s, l]
 }
 
 const canvas = element.querySelector('#c')
@@ -45,6 +72,7 @@ const { data } = output
 const pixelWidth = 3 * subWidth
 
 let color1 //used for filter hue
+//state.hueShift = (state.hueShift + 3) % 360
 
 for (let y = 0; y < canvas.height; y += subHeight) {
   const inputY = Math.floor(y / subHeight)
@@ -55,6 +83,19 @@ for (let y = 0; y < canvas.height; y += subHeight) {
     let ipR = state.imageData.data[inputOffset]
     let ipG = state.imageData.data[inputOffset + 1]
     let ipB = state.imageData.data[inputOffset + 2]
+
+    //rotate hue
+    if (state.shiftHue) {
+      let hslColor = rgb2hsl(ipR, ipG, ipB)
+      let rgbColor = hsl2rgb(
+        (hslColor[0] + Math.round(state.hueShift)) % 360,
+        Math.round(hslColor[1] * 100) / 100,
+        Math.round(hslColor[2] * 100) / 100
+      )
+      ipR = Math.round(rgbColor[0])
+      ipG = Math.round(rgbColor[1])
+      ipB = Math.round(rgbColor[2])
+    }
 
     //invert
     if (state.invertColors) {
@@ -68,14 +109,11 @@ for (let y = 0; y < canvas.height; y += subHeight) {
     ipG -= getRandom(-state.colorVariance, state.colorVariance)
     ipB -= getRandom(-state.colorVariance, state.colorVariance)
 
-    //update color
-    color1 = hsl2rgb(parseInt(state.filterHue), 1, 0.5)
-
     //apply color filter
-    if (state.filterStrength > 0) {
-      ipR += parseInt((color1[0] - ipR) / (1 / state.filterStrength))
-      ipG += parseInt((color1[1] - ipG) / (1 / state.filterStrength))
-      ipB += parseInt((color1[2] - ipB) / (1 / state.filterStrength))
+    if (state.fill_Color && state.fill_Amount > 0) {
+      ipR += parseInt((state.fill_Color.rgb.r - ipR) / (1 / state.fill_Amount))
+      ipG += parseInt((state.fill_Color.rgb.g - ipG) / (1 / state.fill_Amount))
+      ipB += parseInt((state.fill_Color.rgb.b - ipB) / (1 / state.fill_Amount))
     }
 
     for (let sy = 0; sy < subHeight; sy++) {
