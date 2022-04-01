@@ -1,92 +1,91 @@
 {
   "blocks": {
     "gif-file-loader": {
-      "x": 849,
-      "y": 399,
+      "x": 150,
+      "y": 64,
       "outputLinks": {
         "imageData": [
           {
             "lcd-imagedata": "imageData"
           }
-        ],
-        "filename": []
+        ]
       },
       "inputValues": {
         "filename": "../../resources/9.gif",
-        "animate": true
+        "animate": true,
+        "fps": 30
       }
     },
     "image-loader": {
-      "x": 844,
-      "y": 254,
+      "x": -110,
+      "y": 107,
       "outputLinks": {
         "imageData": []
       },
       "inputValues": {
-        "filename": "../../resources/image.jpg"
+        "filename": "../../resources/cat-small.jpeg"
       }
     },
     "lcd-imagedata": {
-      "x": 1029,
-      "y": 342,
+      "x": 337,
+      "y": 40,
       "inputValues": {
-        "noise": 0,
-        "subWidth": "2",
-        "subHeight": "6",
-        "zoom": 57.291666666666664,
-        "filterHue": 268.3229813664596,
-        "filterStrength": 0.6708074534161491,
-        "invertColors": false,
-        "colorVariance": 10,
-        "hueShift": 259.27777777777777,
-        "shiftHue": true,
-        "filterHue2": {
+        "noise": 8.181818181818182,
+        "subWidth": 2,
+        "subHeight": 6,
+        "zoom": 95.83333333333334,
+        "test": {
           "hsl": {
-            "h": 317.6842105263158,
-            "s": 0.9126406597208977,
-            "l": 0.6199605,
+            "h": 148.84615384615387,
+            "s": 0.5253203172666259,
+            "l": 0.26866488,
             "a": 1
           },
-          "hex": "#f746c2",
+          "hex": "#216843",
           "rgb": {
-            "r": 247,
-            "g": 70,
-            "b": 194,
+            "r": 33,
+            "g": 104,
+            "b": 67,
             "a": 1
           },
           "hsv": {
-            "h": 317.6842105263158,
-            "s": 0.7175000000000001,
-            "v": 0.9668000000000001,
+            "h": 148.84615384615387,
+            "s": 0.6888,
+            "v": 0.40979999999999994,
             "a": 1
           },
-          "oldHue": 317.6842105263158,
+          "oldHue": 148.84615384615387,
           "source": "hsv"
         },
+        "colorVariation": 20,
+        "colorVariance": 70,
+        "invertColors": false,
+        "hueShift": 64.81944444444444,
+        "shiftHue": true,
         "fill_Color": {
           "hsl": {
-            "h": 265.1219512195122,
-            "s": 0.875898237617992,
-            "l": 0.5108852700000001,
+            "h": 249.99999999999994,
+            "s": 0.9158028607138065,
+            "l": 0.616376515,
             "a": 1
           },
-          "hex": "#7115f0",
+          "hex": "#6144f7",
           "rgb": {
-            "r": 113,
-            "g": 21,
-            "b": 240,
+            "r": 97,
+            "g": 68,
+            "b": 247,
             "a": 1
           },
           "hsv": {
-            "h": 265.1219512195122,
-            "s": 0.9122,
-            "v": 0.9393,
+            "h": 249.99999999999994,
+            "s": 0.7261,
+            "v": 0.9677,
             "a": 1
           },
-          "oldHue": 265.1219512195122,
+          "oldHue": 249.99999999999994,
           "source": "hsv"
         },
-        "fill_Amount": 0
+        "fill_Amount": 0.2708333333333333
       },
       "outputLinks": {}
     }
