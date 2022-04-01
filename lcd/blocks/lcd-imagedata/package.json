@@ -37,6 +37,7 @@
       },
       "hueShift": {
         "settings": {
+          "default": 1,
           "max": 359
         },
         "type": "slider"
