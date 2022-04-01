@@ -2,6 +2,7 @@
 LCD code by Matt Way.
 
 ##Changes:
+
 lcd-imagedata:
 - color variation
 - invert colors
