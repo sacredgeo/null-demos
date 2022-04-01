@@ -1,7 +1,7 @@
 # null-demos
 LCD code by Matt Way.
 
-#Changes:
+##Changes:
 lcd-imagedata:
 - color variation
 - invert colors
