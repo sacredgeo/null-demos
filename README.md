@@ -5,7 +5,7 @@ This is a program for Null which decodes gif images and displays them with a gli
 ## Features:
 
 ### lcd-imagedata:
-- subWidth/height (sub-pixel size: recommend 1/3 or 2/6)
+- subWidth/height (aka sub-pixel size. recommend 1/3 or 2/6)
 - Effects are applied in this order:
   - invert colors
   - shift (rotate) hue
