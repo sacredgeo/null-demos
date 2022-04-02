@@ -5,12 +5,11 @@ LCD code by Matt Way.
 
 ### lcd-imagedata:
 - subWidth/height (sub-pixel size: recommend 1/3 or 2/6)
-
-Effects are applied in this order:
-- invert colors
-- shift (rotate) hue
-- color fill
-- color variation 
+- Effects are applied in this order:
+  - invert colors
+  - shift (rotate) hue
+  - color fill
+  - color variation 
 
 ### gif-file-loader:
 - manually change fps
