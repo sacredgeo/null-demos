@@ -19,9 +19,9 @@ function rgbSplit(imageData, options) {
 }
 
 const updatedImageData = rgbSplit(state.imageDataIn, {
-  rOffset: parseInt(state.red),
-  gOffset: parseInt(state.green),
-  bOffset: parseInt(state.blue),
+  rOffset: Math.round(state.red),
+  gOffset: Math.round(state.green),
+  bOffset: Math.round(state.blue),
 })
 
 state.imageDataOut = updatedImageData
