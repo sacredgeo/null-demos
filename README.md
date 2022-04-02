@@ -1,7 +1,7 @@
 # null-demos
 LCD code by Matt Way.
 
-## Changes:
+## Features:
 
 ### lcd-imagedata:
 - color variation (this is applied last)
@@ -12,7 +12,7 @@ LCD code by Matt Way.
 ### gif-file-loader:
 - manually change fps
 
-## rgb-split
+### rgb-split
 - split RGB channels in different directions
 - place between gif-file-loader and lcd-imagedata if desired
 - can bypass if not desired
