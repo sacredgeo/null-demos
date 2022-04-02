@@ -1,5 +1,4 @@
 # null-demos
-LCD code by Matt Way.
 
 ## Features:
 
@@ -20,8 +19,8 @@ LCD code by Matt Way.
 - can bypass if not desired
 
 ## Notes:
-
-Recommend using small gif dimensions to increase performance and also to achieve the "old screen" look. For reference, the gif in the screenshot below has a width of 100px. You can resize a gif at https://ezgif.com/resize
+- Recommend using small gif dimensions to increase performance and also to achieve the "old screen" look. For reference, the gif in the screenshot below has a width of 100px. You can resize a gif at https://ezgif.com/resize
+- Credit to Matt Way for the majority of this code. I'm just adding features.
 
 ## Images:
 
