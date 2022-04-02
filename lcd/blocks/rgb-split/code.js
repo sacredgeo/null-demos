@@ -15,7 +15,6 @@ function rgbSplit(imageData, options) {
     newArray[i + 1 + gOffset * 4] = originalArray[i + 1] // G
     newArray[i + 2 + bOffset * 4] = originalArray[i + 2] // B
   }
-  // return a new ImageData object
   return new ImageData(newArray, imageData.width, imageData.height)
 }
 
