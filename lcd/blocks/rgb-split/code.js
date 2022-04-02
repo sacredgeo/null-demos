@@ -3,10 +3,6 @@ if (!state.imageDataIn) {
   return
 }
 
-function getRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 function rgbSplit(imageData, options) {
   // destructure the offset values from options, default to 0
   const { rOffset = 0, gOffset = 0, bOffset = 0 } = options
