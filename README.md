@@ -1,7 +1,6 @@
-# "gif to LCD" null-demo
+# GIF to LCD null-demo
 
-This is a program for Null which decodes gif images and displays them with a glitchy TV / LCD screen effect. 
-Check out Null here: https://github.com/matt-way/0x00
+This is a program for Null which decodes gif images and displays them with a glitchy TV / LCD screen effect. Check out Null here: https://github.com/matt-way/0x00
 
 ## Features:
 
