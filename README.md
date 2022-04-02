@@ -12,10 +12,13 @@ LCD code by Matt Way.
 ### gif-file-loader:
 - manually change fps
 
+## rgb-split
+- split RGB channels in different directions
+- place between gif-file-loader and lcd-imagedata if desired
+- can bypass if not desired
+
 ## Notes:
 
 Recommend using small .gif dimensions to increase performance and also to achieve the "old screen" look. For reference, the .gif in the screenshot has a width of 100px. You can resize a gif at https://ezgif.com/resize
-
-Works well combined with "webcam" block.
 
 <img width="929" src="https://user-images.githubusercontent.com/22250686/161350768-ef928d9b-2796-4581-98b6-8ab532ed329c.png">

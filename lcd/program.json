@@ -1,24 +1,25 @@
 {
   "blocks": {
     "gif-file-loader": {
-      "x": 150,
-      "y": 64,
+      "x": 143,
+      "y": 100,
       "outputLinks": {
         "imageData": [
           {
-            "lcd-imagedata": "imageData"
+            "rgb-split": "imageDataIn"
           }
-        ]
+        ],
+        "filename": []
       },
       "inputValues": {
         "filename": "../../resources/9.gif",
         "animate": true,
-        "fps": 30
+        "fps": 25
       }
     },
     "image-loader": {
-      "x": -110,
-      "y": 107,
+      "x": -237,
+      "y": -7,
       "outputLinks": {
         "imageData": []
       },
@@ -27,13 +28,13 @@
       }
     },
     "lcd-imagedata": {
-      "x": 337,
-      "y": 40,
+      "x": 447,
+      "y": 94,
       "inputValues": {
-        "noise": 8.181818181818182,
+        "noise": 0.20833333333333331,
         "subWidth": 2,
         "subHeight": 6,
-        "zoom": 95.83333333333334,
+        "zoom": 84.375,
         "test": {
           "hsl": {
             "h": 148.84615384615387,
@@ -58,10 +59,10 @@
           "source": "hsv"
         },
         "colorVariation": 20,
-        "colorVariance": 70,
+        "colorVariance": 10,
         "invertColors": false,
-        "hueShift": 64.81944444444444,
-        "shiftHue": true,
+        "hueShift": 14.958333333333332,
+        "shiftHue": false,
         "fill_Color": {
           "hsl": {
             "h": 249.99999999999994,
@@ -85,15 +86,32 @@
           "oldHue": 249.99999999999994,
           "source": "hsv"
         },
-        "fill_Amount": 0.2708333333333333
+        "fill_Amount": 0
       },
       "outputLinks": {}
+    },
+    "rgb-split": {
+      "x": 303,
+      "y": 97,
+      "outputLinks": {
+        "imageDataOut": [
+          {
+            "lcd-imagedata": "imageData"
+          }
+        ]
+      },
+      "inputValues": {
+        "red": 0.3092783505154628,
+        "blue": -0.10309278350515427,
+        "green": 0.19230769230769162
+      }
     }
   },
   "renderOrder": [
     "image-loader",
     "gif-file-loader",
-    "lcd-imagedata"
+    "lcd-imagedata",
+    "rgb-split"
   ],
   "name": "Untitled"
 }

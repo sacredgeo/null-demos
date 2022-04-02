@@ -43,7 +43,7 @@ function delay(ms) {
 if (state.animate) {
   for (let index = 0; ; index++) {
     drawFrame(state.frames[index % state.frames.length])
-    if(state.fps){
+    if (state.fps) {
       await delay(parseInt(1000 / state.fps))
     }
     yield

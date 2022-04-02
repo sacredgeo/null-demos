@@ -1,0 +1,41 @@
+{
+  "main": "code.js",
+  "version": "0.0.1",
+  "block": {
+    "properties": {
+      "imageDataIn": {},
+      "imageDataOut": {},
+      "red": {
+        "settings": {
+          "min": -10,
+          "max": 10
+        },
+        "type": "slider"
+      },
+      "green": {
+        "settings": {
+          "min": -10,
+          "max": 10
+        },
+        "type": "slider"
+      },
+      "blue": {
+        "settings": {
+          "min": -10,
+          "max": 10
+        },
+        "type": "slider"
+      }
+    },
+    "propertyOrder": [
+      "imageDataIn",
+      "imageDataOut",
+      "red",
+      "green",
+      "blue"
+    ]
+  },
+  "name": "rgb-split",
+  "description": "Shift RGB channels in different directions",
+  "tags": []
+}
