@@ -10,7 +10,7 @@ This is a program for Null which decodes gif images and displays them with a gli
   - invert colors
   - shift (rotate) hue
   - color fill
-  - color variation 
+  - color variance (color varies per sub-pixel)
 
 ### gif-file-loader:
 - manually change fps
@@ -18,7 +18,7 @@ This is a program for Null which decodes gif images and displays them with a gli
 ### rgb-split
 - split RGB channels in different directions
 - place between gif-file-loader and lcd-imagedata if desired
-- can bypass if not desired
+- can bypass completely if not desired
 
 ## Notes:
 - Recommend using small gif dimensions to increase performance and also to achieve the "old screen" look. For reference, the gif in the screenshot below has a width of 100px. You can resize a gif at https://ezgif.com/resize
